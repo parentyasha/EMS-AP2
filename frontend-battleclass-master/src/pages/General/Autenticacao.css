@@ -1,0 +1,300 @@
+*{
+    font-family: open sans;
+  }
+/*
+body {
+    background: rgb(253,40,29);
+    background: linear-gradient(221deg, rgba(253,40,29,1) 0%, rgba(206,51,126,1) 50%, rgba(156,63,232,1) 100%);
+    background-size: 2000px 2000px;
+}
+*/
+.main {
+    max-height: 500px;
+    max-width: 90%;
+}
+/*
+.logo {
+    height: 1px;
+    width: 280px;
+    border: 0 none;
+    margin-top: 50%;
+    margin-right: 600px;
+}
+
+#divisor {
+    background-color: white;
+    height: 1px;
+    width: 280px;
+    border: 0 none;
+    margin-top: 400px;
+    margin-right: 70%;
+    transform: rotate(90deg);
+}
+*/
+.form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 630px;
+}
+
+#main-image {
+    width: 100px;
+}
+
+#hr-top-left {
+    width: 120px;
+    left: 106px;
+    top: -50px;
+    position: relative;
+    background-color: white;
+    height: 3px;
+    border: 0 none;
+    border-radius: 5px;
+}
+
+#hr-top-right {
+    width: 120px;
+    right: 106px;
+    top: -62px;
+    position: relative;
+    background-color: white;
+    height: 3px;
+    border: 0 none;
+    border-radius: 5px;
+}
+
+.form #h2-cadastro  {
+    color: white;
+    margin-top: -40px;
+}
+
+/*NAME INPUT*/
+div .name {
+    border-radius: 5px;
+    display: flex;
+    margin-top: 1px;
+    margin-left: 55px;
+}
+
+.label-name-input {
+    margin-right: 206px;
+    color: white;
+    margin-top: 20px;
+}
+
+
+div .name .div-user-icon {
+    width: 45px;
+    border: 1.5px solid;
+    border-color: white;
+    border-radius: 6px 0px 0px 6px;
+}
+    
+div .name .div-user-icon #user-icon {
+    margin-top: 5px;
+    width: 30px;
+    height: 29px;
+}
+
+div .name #name-input {
+    height: 50px;
+    width: 300px;
+    border-radius: 0px 6px 6px 0px;
+    border: 0 none;
+    outline: 0;
+}
+
+#nameHelp {
+    color: white;
+}
+
+/*EMAIL INPUT*/
+div .username {
+    border-radius: 5px;
+    display: flex;
+    margin-top: 1px;
+}
+
+.label-username-input {
+    margin-right: 206px;
+    color: white;
+    margin-top: 20px;
+}
+
+
+div .username .div-user-icon {
+    width: 45px;
+    border: 1.5px solid;
+    border-color: white;
+    border-radius: 6px 0px 0px 6px;
+}
+    
+div .username .div-user-icon #user-icon {
+    margin-top: 5px;
+    width: 30px;
+    height: 29px;
+}
+
+div .username #username-input {
+    height: 50px;
+    width: 300px;
+    border-radius: 0px 6px 6px 0px;
+    border: 0 none;
+    outline: 0;
+}
+
+#usernameHelp {
+    color: white;
+}
+
+
+/*PASSWORD INPUT*/
+.password {
+    border: 1px;
+    border-color: white;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.label-password-input {
+    margin-right: 206px;
+    color: white;
+}
+
+div .password .div-padlock-icon {
+    width: 45px;
+    border: 1.5px solid;
+    border-color: white;
+    border-radius: 6px 0px 0px 6px;
+}
+
+div .password .div-padlock-icon #padlock-icon {
+    margin-top: 5px;
+    width: 30px;
+    height: 29px;
+}
+
+.inputs .password #password-input {
+    height: 50px;
+    width: 300px;
+    border-radius: 0px 6px 6px 0px;
+    border: 0 none;
+    outline: 0;
+}
+
+/*PASSWORD CONFIRMATION FORM*/
+.password-confirmation  {
+    border: 1px;
+    border-color: white;
+    border-radius: 5px;
+    display: flex;
+    margin-left: 53px;
+}
+
+.label-password-input-confirmation {
+    margin-right: 206px;
+    color: white;
+}
+
+div .password-confirmation  .div-padlock-icon-confirmation  {
+    width: 45px;
+    border: 1.5px solid;
+    border-color: white;
+    border-radius: 6px 0px 0px 6px;
+}
+
+div .password-confirmation  .div-padlock-icon-confirmation  #padlock-icon-confirmation  {
+    margin-top: 10px;
+    width: 30px;
+    height: 29px;
+}
+
+div .password-confirmation  #password-input-confirmation  {
+    height: 50px;
+    width: 300px;
+    border-radius: 0px 6px 6px 0px;
+    border: 0 none;
+    outline: 0;
+}
+
+
+/*CHECKBOX INPUT*/
+div .div-accept-terms {
+    margin-top: 20px;
+    margin-right: 86px;
+}
+
+div .div-accept-terms #check-input {
+    display: none;
+}
+
+div .div-accept-terms #check-input + .check-label:before {
+    margin-left: -15px;
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: none;
+    border-radius: 3px;
+    border: 1px solid white
+}
+
+div .div-accept-terms #check-input:checked + .check-label:before {
+    background-color: white;
+}
+
+div .div-accept-terms .check-label {
+    top: 100px;
+    color: white;
+}
+
+
+/*BUTTON*/
+.enter-button {
+    height: 50px;
+    width: auto;
+    min-width: 100%;
+    margin-top: 20px;
+    background-color: #FE5387;
+    border-color: #FE5387;
+    border-radius: 5px;
+    color: white;
+    border: 0 none;
+    font-size: 15px;
+}
+
+.link {
+    margin-top: 20px;
+}
+
+#link-login {
+    margin-left: 210px;
+    font-size: 15px;
+    text-decoration:none;
+    color: white;
+}
+/*
+#link-register {
+    margin-left: -13px;
+    font-size: 15px;
+    text-decoration:none;
+}
+#link-register:link {
+    text-decoration:none;
+}
+
+#link-register:visited {
+    text-decoration:none;
+}
+*/
+#hr-bottom {
+    background-color: white;
+    height: .7px;
+    margin-top: 20px;
+    
+}
+

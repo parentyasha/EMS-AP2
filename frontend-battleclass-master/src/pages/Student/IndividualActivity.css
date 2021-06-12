@@ -1,0 +1,282 @@
+* {
+    font-family: open sans;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 0px;
+}
+
+.individual-activity {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+
+    /*NAVBAR*/
+    .individual-activity .student-data {
+        width: 100%;
+        height: 100px;
+        padding: 9px 0 0 240px;
+        display: flex;
+        position: absolute;
+        white-space: nowrap;
+        border-bottom: solid 1px rgb(212, 212, 212);
+    }
+
+    .individual-activity .student-data .student-name {
+        margin-top: 15px;
+        color: black;
+        font-size: 23pt;
+    }
+
+    .individual-activity .student-data .trace {
+        margin-top: 15px;
+        color: black;
+        font-size: 23pt;
+        margin-left: 20px;
+    }
+
+    .individual-activity .student-data .student-points {
+        margin-top: 15px;
+        color: black;
+        font-size: 23pt;
+        margin-left: 20px;
+    }
+
+    .individual-activity .div-img-user {
+        float: right;
+        margin-right: 30px;
+    }
+
+    .individual-activity .div-img-user .img-user {
+        width: 98px;
+    }
+
+
+    /*MENU*/
+    .individual-activity .menu {
+        width: 200px;
+        height: 100%;
+        position: fixed;
+        background:rgba(9,9,121,1);
+        z-index: 1;
+        margin-top: -95px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .individual-activity .menu .menu-item {
+        color: white;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        border-bottom: 1px solid;
+        border-color: white;
+        cursor: pointer;
+    }
+
+    .individual-activity .menu .menu-item:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+
+    .individual-activity .menu .sitename {
+        padding: 30px 16px;
+        color: white;
+        border: none;
+        border-bottom: 1px solid white;
+        font-size: 20pt;
+    }
+
+    .individual-activity .menu .sitename:hover {
+        background: rgba(9,9,121,1);
+        color: white;
+    }
+
+    .individual-activity .menu .menu-bottom {
+        width: 200px;
+        position: absolute;
+        bottom: 0;
+    }
+
+
+/*RANKINGS*/
+.individual-activity .ranking {
+    width: 270px;
+    height: 390px;
+    background: white;
+    border-radius: 9px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.07);
+    float: right;
+    transform: translate(90px, 130px);
+}
+
+.individual-activity .ranking .str-ranking {
+    margin: 10px 15px 0 15px;
+    text-align: center;
+}
+
+.individual-activity .ranking ul {
+    margin: 10px 15px 0 15px;
+}
+
+.individual-activity .ranking ul li {
+    height: 50px;
+    margin-bottom: 20px; 
+    display: inline-block;
+    border-bottom: solid 1px rgb(190, 190, 190);
+}
+
+.individual-activity .ranking ul li .team-ranking {
+    width: 235px;
+    display: flex;
+}
+
+.individual-activity .ranking ul li .team-ranking .team-profile img {
+    height: 40px;
+}
+
+.individual-activity .ranking ul li .team-ranking .team-name {
+    width: 163px;
+    height: 30px;
+    text-align: left;
+    transform: translate(8px, 8px);
+
+    white-space: nowrap;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+.individual-activity .ranking ul li .team-ranking .team-points {
+    width: 30px; 
+    position: absolute;
+    transform: translate(205px, 8px);
+}
+
+
+/*ACTIVITY CARDS*/
+.individual-activity .content2 {
+    width: 66%;
+    height: 100%;
+    margin: 110px 0 0 16%;
+    /*border: solid 1px*/
+}
+
+.individual-activity .content2 .empty {
+    font-size: 26pt;
+    color: rgb(212, 212, 212);
+    margin-top: 37%;
+}
+
+.individual-activity .content2 .cards-questions {
+    width: 90%;
+    margin: 20px 0 0 5%;
+    /*border: solid 1px red;*/
+}
+
+.individual-activity .content2 .cards-questions ul {
+    list-style: none;
+    /*display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;*/
+    /*border: solid 1px;*/
+}
+
+.individual-activity .content2 .cards-questions .card-individual {
+    /*width: 95%;*/
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: relative;
+    /*border: solid 1px blue;*/
+}
+
+
+.individual-activity .content2 .cards-questions .card-individual .str-question {
+    width: 95%;
+    margin-top: 10px;
+    margin-left: 2.5%;
+    border-bottom: solid 1px rgb(202, 202, 202);
+    /*border: solid 1px;*/
+}
+
+.individual-activity .content2 .cards-questions .card-individual .activity-context {
+    width: 95%;
+    max-height: 100%;
+    margin: 15px 2.5% 0 2.5%;
+    text-align: justify;
+    /*border: solid 1px;*/
+}
+
+.individual-activity .content2 .cards-questions .card-individual .alternatives {
+    width: 95%;
+    min-height: 180px;
+    max-height: 100%;
+    margin-top: 20px;
+    margin-left: 2.5%;
+    /*border: solid 1px;*/
+}
+
+.individual-activity .content2 .cards-questions .card-individual .alternatives .individual-alternative {
+    /*width: 100%;
+    margin-top: 10px;
+    border: solid 1px;*/
+}
+
+
+.individual-activity .content2 .cards-questions .card-individual .alternatives .individual-alternative .div-radio-input .radio-input {
+    margin-top: 8px;
+    margin-right: 5px;
+    float: left;
+}
+
+.individual-activity .content2 .cards-questions .card-individual .alternatives .individual-alternative .alphabet-letter {
+    margin-right: 5px;
+    float: left;
+    /*border: solid 1px;*/
+}
+
+.individual-activity .content2 .cards-questions .card-individual .alternatives .individual-alternative .div-alternative-text {
+    width: 95%;
+    min-width: 450px;
+    margin-bottom: 10px;
+    /*margin-right: 20px;*/
+    float: left;
+    text-align: justify;
+    /*border: solid 1px;*/
+
+}
+
+.individual-activity .content2 .cards-questions .card-individual .alternatives .individual-alternative .div-alternative-text .alternative-text {
+    float: left;
+    /*border: solid 1px;*/
+
+}
+
+.individual-activity .content2 .div-button {
+    float: right;
+    margin-right: 5%;
+}
+
+.individual-activity .content2 .button {
+
+}
+
+
+
+.individual-activity .menu .disabled {
+    color: gray; 
+}
+
+.individual-activity .menu .disabled:hover {
+    color: gray; 
+    background: rgba(9,9,121,1);
+    cursor: default;
+}

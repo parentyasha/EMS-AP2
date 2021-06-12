@@ -1,0 +1,231 @@
+* {
+    font-family: open sans;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ 
+html, body{
+    height: 0px;
+}
+
+.settings {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+/*NAVBAR*/
+ .settings .screen-data {
+    width: 100%;
+    height: 100px;
+    padding: 9px 0 0 240px;
+    display: flex;
+    position: absolute;
+    white-space: nowrap;
+    border-bottom: solid 1px rgb(212, 212, 212);
+}
+
+ .settings .screen-data .str {
+    margin-top: 15px;
+    color: black;
+    font-size: 23pt;
+}
+
+ .settings .div-img-user {
+    float: right;
+    margin-right: 30px;
+}
+
+ .settings .div-img-user .img-user {
+    width: 98px;
+}
+
+
+/*MENU*/
+ .settings .menu {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    background:rgba(9,9,121,1);
+    z-index: 1;
+    margin-top: -95px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+ .settings .menu a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid;
+    border-color: white;
+    cursor: pointer;
+}
+
+ .settings .menu a:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+ .settings .menu .sitename {
+    padding: 30px 16px;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 20pt;
+}
+
+ .settings .menu .sitename:hover {
+    background: rgba(9,9,121,1);
+    color: white;
+}
+
+.settings .menu .selected {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+ .settings .menu .menu-bottom {
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+}
+
+/*RANKINGS*/
+.settings .ranking {
+    width: 270px;
+    height: 390px;
+    background: white;
+    border-radius: 9px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.07);
+    float: right;
+    transform: translate(90px, 130px);
+}
+
+.settings .ranking .str-ranking {
+    margin: 10px 15px 0 15px;
+    text-align: center;
+}
+
+.settings .ranking ul {
+    margin: 10px 15px 0 15px;
+}
+
+.settings .ranking ul li {
+    height: 50px;
+    margin-bottom: 20px; 
+    display: inline-block;
+    border-bottom: solid 1px rgb(190, 190, 190);
+}
+
+.settings .ranking ul li .team-ranking {
+    width: 235px;
+    display: flex;
+}
+
+.settings .ranking ul li .team-ranking .team-profile img {
+    height: 40px;
+}
+
+.settings .ranking ul li .team-ranking .team-name {
+    width: 163px;
+    height: 30px;
+    text-align: left;
+    transform: translate(8px, 8px);
+
+    white-space: nowrap;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+.settings .ranking ul li .team-ranking .team-points {
+    width: 30px; 
+    position: absolute;
+    transform: translate(205px, 8px);
+}
+
+
+/*TASKS*/
+.settings .inputs {
+    margin-top: 150px;
+    margin-left: 320px;
+}
+
+.settings .inputs .data-name {
+
+}
+
+.settings .inputs .data-name .label-name {
+    transform: translate(-630px);
+}
+
+.settings .inputs .data-name .div-input-name {
+    
+}
+
+.settings .inputs .data-name .div-input-name .input-name {
+    width: 500px;
+    height: 40px;
+    border: none;
+    border-bottom: solid 1px rgb(194, 194, 194);
+    border-radius: 0 0 0 0;
+    -webkit-box-shadow: none !important;
+}
+
+.settings .inputs .data-email {
+
+}
+
+.settings .inputs .data-email .label-email {
+    margin-top: 20px;
+    transform: translate(-630px);
+}
+
+.settings .inputs .data-email .div-input-email {
+
+}
+
+.settings .inputs .data-email .div-input-email .input-email {
+    width: 500px;
+    height: 40px;
+    border: none;
+    border-bottom: solid 1px rgb(194, 194, 194);
+    border-radius: 0 0 0 0;
+    -webkit-box-shadow: none !important;
+}
+
+.settings .inputs .data-password {
+    display: flex;
+}
+
+.settings .inputs .data-password div .label-password {
+    margin-top: 20px;
+    transform: translate(-630px);
+}
+
+.settings .inputs .data-password div .div-input-password {
+
+}
+
+.settings .inputs .data-password div .div-input-password .input-password {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-bottom: solid 1px rgb(194, 194, 194);
+    border-radius: 0 0 0 0;
+    -webkit-box-shadow: none !important;
+}
+
+.settings .inputs .data-password .div-button {
+    transform: translate( 20px, 50px);
+}
+
+.settings .inputs .data-password .div-button .change-button {
+    width: 90px;
+}

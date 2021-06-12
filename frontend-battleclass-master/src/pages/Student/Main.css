@@ -1,0 +1,288 @@
+* {
+    font-family: open sans;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ 
+html, body {
+    height: 0px;
+}
+
+.main-student {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+
+.main-student .student-data {
+    width: 100%;
+    height: 100px;
+    padding: 9px 0 0 240px;
+    /*margin: 0 0px 0 200px;*/
+    display: flex;
+    position: absolute;
+    white-space: nowrap;
+    border-bottom: solid 1px rgb(212, 212, 212);
+}
+
+.main-student .student-data .student-name {
+    margin-top: 15px;
+    color: black;
+    font-size: 23pt;
+    /*border: solid 1px;*/
+}
+
+.main-student .student-data .trace {
+    margin-top: 15px;
+    color: black;
+    font-size: 23pt;
+    margin-left: 20px;
+    /*border: solid 1px;*/
+}
+
+.main-student .student-data .student-points {
+    margin-top: 15px;
+    color: black;
+    font-size: 23pt;
+    margin-left: 20px;
+    /*border: solid 1px*;*/
+}
+
+.main-student .div-img-user {
+    float: right;
+    margin-right: 30px;
+    /*transform: translate(right, 0);*/
+    /*margin-left: 40%;*/
+    /*border: solid 1px;*/
+}
+
+.main-student .div-img-user .img-user {
+    width: 98px;
+}
+
+/*
+.main-student #hr-nav {
+    width: 76%;
+    margin: 94px 0 0 250px;
+    background: rgb(212, 212, 212);
+    background: red;
+}
+*/
+
+/*MENU*/
+.main-student .menu {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    background:rgba(9,9,121,1);
+    z-index: 1;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.main-student .menu .menu-item {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid;
+    border-color: white;
+    cursor: pointer;
+}
+
+.main-student .menu .menu-item:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.main-student .menu .sitename {
+    padding: 30px 16px;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 20pt;
+}
+
+.main-student .menu .sitename:hover {
+    background: rgba(9,9,121,1);
+    color: white;
+}
+
+.main-student .menu .selected {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.main-student .menu .menu-bottom {
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/*RANKINGS*/
+.main-student .ranking {
+    width: 270px;
+    height: 390px;
+    background: white;
+    border-radius: 9px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.07);
+    float: right;
+    transform: translate(90px, 130px);
+}
+
+.main-student .ranking .str-ranking {
+    margin: 10px 15px 0 15px;
+    text-align: center;
+    /*border: solid 1px;*/
+}
+
+.main-student .ranking ul {
+    margin: 10px 15px 0 15px;
+    /*border: solid 1px red;*/
+}
+
+.main-student .ranking ul li {
+    height: 50px;
+    margin-bottom: 20px; 
+    display: inline-block;
+    border-bottom: solid 1px rgb(190, 190, 190);
+}
+
+.main-student .ranking ul li .team-ranking {
+    width: 235px;
+    display: flex;
+    /*border: solid 1px greenyellow;*/
+}
+
+.main-student .ranking ul li .team-ranking:hover {
+    /*background-color: #f1f1f1;
+    cursor: pointer;*/
+}
+
+.main-student .ranking ul li .team-ranking .team-profile {
+    /*position: absolute;*/
+    /*border: solid 1px;*/
+}
+
+.main-student .ranking ul li .team-ranking .team-profile img {
+    height: 40px;
+}
+
+.main-student .ranking ul li .team-ranking .team-name {
+    width: 163px;
+    height: 30px;
+    text-align: left;
+    transform: translate(8px, 8px);
+
+    white-space: nowrap;
+    overflow: hidden;
+    transition-duration: 1s;
+    /*border: solid 1px;*/
+}
+
+.main-student .ranking ul li .team-ranking .team-points {
+    width: 30px; 
+    position: absolute;
+    transform: translate(205px, 8px);
+    /*border: solid 1px;*/
+}
+
+/*TASKS*/
+.main-student .content {
+    width: auto;
+    min-width: 380px;
+    max-width: 66%;
+    margin: 130px 380px 0 240px;
+    /*border: solid 1px;*/
+}
+
+.main-student .content .task {
+    width: 100%;
+    margin-bottom: 40px;
+    list-style-type: none;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px 5px rgba(0,0,0,0.07);
+    transition: transform .3s cubic-bezier(.52,.28,.47,1.15),-webkit-transform .3s cubic-bezier(.52,.28,.47,1.15);
+    /*border: solid 1px;*/
+}
+
+
+.main-student .content .task:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    transform: translateY(-10px);
+    transition: transform .3s cubic-bezier(.52,.28,.47,1.15),-webkit-transform .3s cubic-bezier(.52,.28,.47,1.15);
+}
+
+.main-student .content .task .div-task-content {
+    display: flex;
+    /*border: solid 1px;*/
+}
+
+.main-student .content .task .div-task-content .task-content {
+    width: 85%;
+    height: 230px;
+    margin-top: 20px;
+    margin-left: 20px;
+    /*border: solid 1px;*/
+}
+
+.main-student .content .task .task-content .task-title {
+    /*width: 100%;*/
+    float: left;
+    font-size: 25px;
+}
+
+.main-student .content .task .task-content .task-description {
+    content: '...';
+    width: 100%;
+    height: 180px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 100%;
+    color: rgb(161, 161, 161);
+    text-align: justify;
+    overflow: hidden;
+}
+
+.main-student .content .task .task-points {
+    width: 15%;
+    height: 202px;
+    margin-top: 28px;
+    margin-left: 20px;
+    border-left: 1.5px solid;
+    border-color: rgb(218, 217, 217);
+}
+
+.main-student .content .task .task-points .task-points-notes {
+    font-size: 20px;
+}
+
+.main-student .content .task .task-points .task-pontuation {
+    font-size: 25px;
+    margin-top: 8px;
+}
+
+.main-student .content .empty {
+    font-size: 26pt;
+    color: rgb(212, 212, 212);
+    margin-top: 37%;
+}
+
+.main-student .menu .disabled {
+    color: gray; 
+}
+
+.main-student .menu .disabled:hover {
+    color: gray; 
+    background: rgba(9,9,121,1);
+    cursor: default;
+}

@@ -1,0 +1,243 @@
+* {
+    font-family: open sans;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 0px;
+}
+
+.add-activity {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+
+/*NAVBAR*/
+.add-activity .screen-data {
+    width: 100%;
+    height: 100px;
+    padding: 9px 0 0 240px;
+    display: flex;
+    position: absolute;
+    white-space: nowrap;
+    border-bottom: solid 1px rgb(212, 212, 212);
+}
+
+.add-activity .screen-data .str {
+    margin-top: 15px;
+    color: black;
+    font-size: 23pt;
+}
+
+.add-activity .div-img-user {
+    float: right;
+    margin-right: 30px;
+}
+
+.add-activity .div-img-user .img-user {
+    width: 98px;
+}
+
+
+/*MENU*/
+.add-activity .menu {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    background:rgba(9,9,121,1);
+    z-index: 1;
+    margin-top: -95px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.add-activity .menu a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid;
+    border-color: white;
+    cursor: pointer;
+}
+
+.add-activity .menu a:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.add-activity .menu .sitename {
+    padding: 30px 16px;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 20pt;
+}
+
+.add-activity .menu .sitename:hover {
+    background: rgba(9,9,121,1);
+    color: white;
+}
+
+.add-activity .menu .menu-bottom {
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/*RANKINGS*/
+.add-activity .ranking {
+    width: 270px;
+    height: 390px;
+    background: white;
+    border-radius: 9px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.07);
+    float: right;
+    transform: translate(90px, 130px);
+}
+
+.add-activity .ranking .str-ranking {
+    margin: 10px 15px 0 15px;
+    text-align: center;
+}
+
+.add-activity .ranking ul {
+    margin: 10px 15px 0 15px;
+}
+
+.add-activity .ranking ul li {
+    height: 50px;
+    margin-bottom: 20px; 
+    display: inline-block;
+    border-bottom: solid 1px rgb(190, 190, 190);
+}
+
+.add-activity .ranking ul li .team-ranking {
+    width: 235px;
+    display: flex;
+}
+
+.add-activity .ranking ul li .team-ranking .team-profile img {
+    height: 40px;
+}
+
+.add-activity .ranking ul li .team-ranking .team-name {
+    width: 163px;
+    height: 30px;
+    text-align: left;
+    transform: translate(8px, 8px);
+
+    white-space: nowrap;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+.add-activity .ranking ul li .team-ranking .team-points {
+    width: 30px; 
+    position: absolute;
+    transform: translate(205px, 8px);
+}
+
+
+
+.add-activity .content {
+    width: 55%;
+    max-height: 100%;
+    margin-top: 125px;
+    margin-left: 20%;
+    /*border: solid 1px blue;*/
+}
+
+.add-activity .content .input-title {
+    width: 94.5%;
+    margin-left: 20px;
+    /*border: solid 1px red;*/
+}
+
+.add-activity .content .input-title label {
+    float: left;
+    /*border: solid 1px red;*/
+}
+
+/*ACTIVITY CARDS*/
+.add-activity .content .cards-questions {
+    width: 100%;
+    margin-top: 25px;
+    float: right;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /*border: solid 1px red;*/
+}
+
+.add-activity .content .cards-questions .individual-card .str-content {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.add-activity .content .cards-questions strong {
+    /*margin: 20px 20px 20px 20px;*/
+    float: left;
+}
+
+.add-activity .content .cards-questions .editor {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /*border: solid 1px;*/
+}
+
+.add-activity .content .cards-questions .alternative {
+    width: 94.2%; 
+    margin-top: 20px;
+    margin-left: 20px;
+    /*border: solid 1px;*/
+}
+
+.add-activity .content .cards-questions .alternative strong {
+    float: left;
+}
+
+.add-activity .content .cards-questions .alternative .letter-editor {
+    width: 100%;
+    margin-top: 10px;
+    float: left;
+}
+
+.add-activity .content .cards-questions .alternative .letter-editor .letter-alternative {
+    margin-left: 11px;
+    float: left;
+}
+
+.add-activity .content .cards-questions .alternative .letter-editor .editor-alternative {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    /*border: solid 1px;*/
+}
+
+.add-activity .content .cards-questions .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+    float: bottom;
+    float: right;
+    margin: 20px 40px 20px 0px;
+    /*border: solid 1px;*/
+}
+
+.add-activity .menu .disabled {
+    color: gray; 
+}
+
+.add-activity .menu .disabled:hover {
+    color: gray; 
+    background: rgba(9,9,121,1);
+    cursor: default;
+}

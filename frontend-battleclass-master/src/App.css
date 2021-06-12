@@ -1,0 +1,109 @@
+* {
+    font-family: open sans;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 0px;
+    height: 0px;
+}
+
+/*NAVBAR*/
+.App .navbar {
+    height: 100px;
+    width: 250px;
+    background-color: rgba(9,9,121,1);
+    border-bottom: solid 1px;
+    border-color: white;
+    cursor: pointer;
+    z-index: -1;
+    
+}
+
+.App .navbar .sitename {
+    color: white;
+    margin-left: 25px;
+    font-size: 20pt;
+}
+
+/*
+.App .menu {
+    transform: translate( 0px, 0px);
+    position: fixed;
+    background-color: rgba(9,9,121,1);
+    width: 250px;
+    height: 100%;
+    z-index: 1;
+}
+
+.App .menu .sitename {
+    padding: 35px 16px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    border: none;
+    border-bottom: 1px solid;
+    border-color: white;
+    font-size: 20pt;
+    cursor: pointer;
+}
+
+.App .menu .sitename:hover {
+    color: white;
+}
+
+.App .menu .tab {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid;
+    border-color: white;
+    cursor: pointer;
+}
+
+.App .menu .tab:hover {
+    background-color: white;
+    color: black;
+}
+
+.App .menu .menu-bottom {
+    /*margin-top: 544px;*/
+    /*padding-top: 100%;*/
+    /*transform: translate(0%, 532px);
+
+}
+*/
+footer {
+    height: 35px;
+    width: 100%;
+    color: white;
+    margin-left: -8px;
+    font-size: 12px;
+    
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer #github-image {
+    width: 15px;
+    margin-left: 5px;
+    margin-top: 2px;
+}

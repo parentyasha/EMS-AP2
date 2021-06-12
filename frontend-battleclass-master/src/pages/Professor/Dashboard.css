@@ -1,0 +1,232 @@
+* {
+    font-family: open sans;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 0px;
+}
+/*
+@media (min-width: 620px) {
+    .dashboard {
+        column-count: 2;
+        column-gap: 20px;    
+    }
+    
+    section {
+      break-inside: avoid;
+    }
+  }
+
+@media (min-width: 960px) {
+    .dashboard {
+       column-count: 2;
+    }
+  }
+*/
+.dashboard  {   
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    background: white;
+  }
+
+
+/*NAVBAR*/
+.dashboard .screen-data {
+    width: 100%;
+    height: 100px;
+    padding: 9px 0 0 240px;
+    display: flex;
+    position: absolute;
+    white-space: nowrap;
+    border-bottom: solid 1px rgb(212, 212, 212);
+}
+
+.dashboard .screen-data .str {
+    margin-top: 15px;
+    color: black;
+    font-size: 23pt;
+}
+
+.dashboard .div-img-user {
+    float: right;
+    margin-right: 30px;
+}
+
+.dashboard .div-img-user .img-user {
+    width: 98px;
+}
+
+
+/*MENU*/
+.dashboard .menu {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    background:rgba(9,9,121,1);
+    z-index: 1;
+    margin-top: -95px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.dashboard .menu a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid;
+    border-color: white;
+    cursor: pointer;
+}
+
+.dashboard .menu a:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.dashboard .menu .sitename {
+    padding: 30px 16px;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 20pt;
+}
+
+.dashboard .menu .sitename:hover {
+    background: rgba(9,9,121,1);
+    color: white;
+}
+
+.dashboard .menu .menu-bottom {
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/*RANKINGS*/
+.dashboard .ranking {
+    width: 270px;
+    height: 390px;
+    background: white;
+    border-radius: 9px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.07);
+    float: right;
+    transform: translate(90px, 130px);
+}
+
+.dashboard .ranking .str-ranking {
+    margin: 10px 15px 0 15px;
+    text-align: center;
+}
+
+.dashboard .ranking ul {
+    margin: 10px 15px 0 15px;
+}
+
+.dashboard .ranking ul li {
+    height: 50px;
+    margin-bottom: 20px; 
+    display: inline-block;
+    border-bottom: solid 1px rgb(190, 190, 190);
+}
+
+.dashboard .ranking ul li .team-ranking {
+    width: 235px;
+    display: flex;
+}
+
+.dashboard .ranking ul li .team-ranking .team-profile img {
+    height: 40px;
+}
+
+.dashboard .ranking ul li .team-ranking .team-name {
+    width: 163px;
+    height: 30px;
+    text-align: left;
+    transform: translate(8px, 8px);
+
+    white-space: nowrap;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+.dashboard .ranking ul li .team-ranking .team-points {
+    width: 30px; 
+    position: absolute;
+    transform: translate(205px, 8px);
+}
+
+
+/*PROFILES CARDS*/
+.dashboard .content {
+    width: auto;
+    max-width: 66%;
+    min-width: 10%;
+    height: 100%;
+    margin: 110px 0 0 16%;
+    /*border: solid 1px;*/
+}
+
+.dashboard .content .cards-students {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 7%;
+    /*border: solid 1px red;*/
+}
+
+.dashboard .content .cards-students ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 2fr));
+    grid-gap: 20px;
+    border: solid 1px;
+}
+
+.dashboard .content .cards-students .card-individual {
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /*border: solid 1px blue;*/
+}
+
+.dashboard .content .cards-students .card-individual .dataname {
+    margin-top: 5px;
+    font-size: 15pt;
+    /*border: solid 1px;*/
+    
+}
+
+.dashboard .content .cards-students .card-individual .number {
+    margin-top: 8px;
+    font-size: 30pt;
+    /*border: solid 1px green;*/
+}
+
+canvas {
+    margin-top: 300px;
+    margin-left: 300px;
+}
+
+.dashboard #warning {
+    font-size: 26pt;
+    color: rgb(212, 212, 212);
+    margin: 35% 0 0 0;
+}
+
+.dashboard .menu .disabled {
+    color: gray; 
+}
+
+.dashboard .menu .disabled:hover {
+    color: gray; 
+    background: rgba(9,9,121,1);
+    cursor: default;
+}

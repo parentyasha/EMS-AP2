@@ -1,0 +1,238 @@
+* {
+    font-family: open sans;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ 
+html, body {
+    height: 0px;
+}
+
+.contacts {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+
+/*NAVBAR*/
+.contacts .screen-data {
+    width: 100%;
+    height: 100px;
+    padding: 9px 0 0 240px;
+    display: flex;
+    position: absolute;
+    white-space: nowrap;
+    border-bottom: solid 1px rgb(212, 212, 212);
+}
+
+.contacts .screen-data .str {
+    margin-top: 15px;
+    color: black;
+    font-size: 23pt;
+}
+
+.contacts .div-img-user {
+    float: right;
+    margin-right: 30px;
+}
+
+.contacts .div-img-user .img-user {
+    width: 98px;
+}
+
+
+/*MENU*/
+.contacts .menu {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    background:rgba(9,9,121,1);
+    z-index: 1;
+    margin-top: -95px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.contacts .menu a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid;
+    border-color: white;
+    cursor: pointer;
+}
+
+.contacts .menu a:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.contacts .menu .sitename {
+    padding: 30px 16px;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 20pt;
+}
+
+.contacts .menu .sitename:hover {
+    background: rgba(9,9,121,1);
+    color: white;
+}
+
+.contacts .menu .selected {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.contacts .menu .menu-bottom {
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/*RANKINGS*/
+.contacts .ranking {
+    width: 270px;
+    height: 390px;
+    background: white;
+    border-radius: 9px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.07);
+    float: right;
+    transform: translate(90px, 130px);
+}
+
+.contacts .ranking .str-ranking {
+    margin: 10px 15px 0 15px;
+    text-align: center;
+}
+
+.contacts .ranking ul {
+    margin: 10px 15px 0 15px;
+}
+
+.contacts .ranking ul li {
+    height: 50px;
+    margin-bottom: 20px; 
+    display: inline-block;
+    border-bottom: solid 1px rgb(190, 190, 190);
+}
+
+.contacts .ranking ul li .team-ranking {
+    width: 235px;
+    display: flex;
+}
+
+.contacts .ranking ul li .team-ranking .team-profile img {
+    height: 40px;
+}
+
+.contacts .ranking ul li .team-ranking .team-name {
+    width: 163px;
+    height: 30px;
+    text-align: left;
+    transform: translate(8px, 8px);
+
+    white-space: nowrap;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+.contacts .ranking ul li .team-ranking .team-points {
+    width: 30px; 
+    position: absolute;
+    transform: translate(205px, 8px);
+}
+
+
+/*CONTENT*/
+.contacts .content {
+    width: auto;
+    min-width: 380px;
+    max-width: 66%;
+    margin: 130px 380px 0 240px;
+    border: solid 1px white;
+}
+
+.contacts .content .support {
+    float: left;
+    /*border: solid 1px;*/
+}
+
+.contacts .content .support .str-support {
+    font-size: 20pt;
+    float: left;
+    /*border: solid 1px;*/
+}
+
+.contacts .content .cards-devs {
+    margin-top: 90px;
+    border: solid 1px white;
+}
+
+.contacts .content .cards-devs .str-developers {
+    font-size: 20pt;
+    margin-bottom: -10px;
+    float: left;
+    /*border: solid 1px;*/
+}
+
+.contacts .content .cards-devs .devs { 
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px; 
+}
+
+.contacts .content .cards-devs .devs .dev {
+    width: auto;
+    min-width: 290px;
+    max-width: 350px;
+    height: 230px;
+    float: left;
+    border-radius: 9px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.07);
+    /*border: solid 1px;*/
+}
+
+.contacts .content .cards-devs .devs .dev .profile-data {
+    display: flex;
+    margin: 0 10px 0 10px;
+    border-bottom: solid 1px rgb(212, 212, 212);
+}
+
+.contacts .content .cards-devs .devs .dev .profile-data .icon {
+    width: 30%;
+    margin: 10px 0 5px 0px;
+    /*border: solid 1px;*/
+}
+
+.contacts .content .cards-devs .devs .dev .profile-data .name {
+    margin: 40px 0 5px 10px;
+    float: left;
+    /*border: solid 1px;*/
+}
+
+.contacts .content .cards-devs .devs .dev .profission {
+    margin: 10px 0 0 10px;
+    float: left;
+    /*border: solid 1px;*/
+}
+
+.contacts .content .cards-devs .devs .dev .email {
+    margin: 10px 0 0 10px;
+    float: left;
+    /*border: solid 1px;*/
+}
+
+.contacts .content .cards-devs .devs .dev strong {
+    float: left;
+}

@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 0px;
+}
+
+.batalha .button-return {
+    width: 230px;
+    margin: 20px 0 0 20px;
+}
+
+/*CONTENT*/
+.batalha .content {
+    width: auto;
+    max-width: 66%;
+    min-width: 10%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.batalha .content .rectangle {
+    width: 400px;
+    height: 250px;
+    background: #918EFF;
+    border: solid 1px transparent;
+}
+
+.batalha .content ul {
+    list-style: none;
+}
+
+.batalha .content .rectangle ul li {
+    margin-top: 47px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.batalha .content .rectangle ul li .div .circle {
+    width: 155px;
+    height: 155px;
+}
+
+.batalha .content .pontuacao {
+    color: white;
+}
+
+.batalha .content .rectangle2 {
+    background: #FC9393;
+}
+
+.batalha .content .button-battle {
+    width: 200px;
+    margin: 20px 100px;
+}
+

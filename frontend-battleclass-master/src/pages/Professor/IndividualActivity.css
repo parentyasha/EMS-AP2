@@ -1,0 +1,136 @@
+/*NAVBAR*/
+.dashboard .screen-data {
+    width: 100%;
+    height: 100px;
+    padding: 9px 0 0 240px;
+    display: flex;
+    position: absolute;
+    white-space: nowrap;
+    border-bottom: solid 1px rgb(212, 212, 212);
+}
+
+.dashboard .screen-data .str-dashboard {
+    margin-top: 15px;
+    color: black;
+    font-size: 23pt;
+}
+
+.dashboard .div-img-user {
+    float: right;
+    margin-right: 30px;
+}
+
+.dashboard .div-img-user .img-user {
+    width: 98px;
+}
+
+
+/*MENU*/
+.dashboard .menu {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    background:rgba(9,9,121,1);
+    z-index: 1;
+    margin-top: -95px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.dashboard .menu a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid;
+    border-color: white;
+    cursor: pointer;
+}
+
+.dashboard .menu a:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.dashboard .menu .sitename {
+    padding: 30px 16px;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 20pt;
+}
+
+.dashboard .menu .sitename:hover {
+    background: rgba(9,9,121,1);
+    color: white;
+}
+
+.dashboard .menu .menu-bottom {
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+}
+
+/*RANKINGS*/
+.individual-activity .ranking {
+    width: 270px;
+    height: 390px;
+    background: white;
+    border-radius: 9px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.07);
+    float: right;
+    transform: translate(90px, 130px);
+}
+
+.individual-activity .ranking .str-ranking {
+    margin: 10px 15px 0 15px;
+    text-align: center;
+}
+
+.individual-activity .ranking ul {
+    margin: 10px 15px 0 15px;
+}
+
+.individual-activity .ranking ul li {
+    height: 50px;
+    margin-bottom: 20px; 
+    display: inline-block;
+    border-bottom: solid 1px rgb(190, 190, 190);
+}
+
+.individual-activity .ranking ul li .team-ranking {
+    width: 235px;
+    display: flex;
+}
+
+.individual-activity .ranking ul li .team-ranking .team-profile img {
+    height: 40px;
+}
+
+.individual-activity .ranking ul li .team-ranking .team-name {
+    width: 163px;
+    height: 30px;
+    text-align: left;
+    transform: translate(8px, 8px);
+
+    white-space: nowrap;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+.individual-activity .ranking ul li .team-ranking .team-points {
+    width: 30px; 
+    position: absolute;
+    transform: translate(205px, 8px);
+}
+
+.individual-activity .menu .disabled {
+    color: gray; 
+}
+
+.individual-activity.menu .disabled:hover {
+    color: gray; 
+    background: rgba(9,9,121,1);
+    cursor: default;
+}

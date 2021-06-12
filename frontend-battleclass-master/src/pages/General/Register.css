@@ -1,0 +1,310 @@
+* {
+    font-family: open sans;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 0px;
+}
+
+.main-register {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg, rgba(2,0,36,1) 0%,
+        rgba(9,9,121,1) 35%,
+        rgba(0,212,255,1) 100%
+    );
+}
+
+.form-register {
+    width: 450px;
+    height: 745px;
+    border-radius: 10px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    background: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+
+.form-register #main-image {
+    width: 100px;
+    margin-top: 20px;
+}
+
+.form-register #hr-top-left {
+    width: 120px;
+    left: 60px;
+    top: -50px;
+    position: relative;
+    background-color: black;
+    height: 3px;
+    border: 0 none;
+    border-radius: 5px;
+}
+
+.form-register #hr-top-right {
+    width: 120px;
+    right: -270px;
+    top: -70px;
+    position: relative;
+    background-color: black;
+    height: 3px;
+    border: 0 none;
+    border-radius: 5px;
+}
+
+.form-register #h2-cadastro  {
+    color: black;
+    margin-top: -40px;
+}
+
+/*NAME INPUT*/
+.form-register .name {
+    border-radius: 5px;
+    display: flex;
+    margin-top: -5px;
+    margin-left: 55px;
+}
+
+.form-register .label-name-input {
+    margin-right: 206px;
+    color: black;
+}
+
+.form-register .name .div-user-icon {
+    width: 45px;
+    border-bottom: solid .5px;
+    border-color: rgb(194, 194, 194);
+    border-radius: 0px 0px 0px 0px;
+}
+    
+.form-register .name .div-user-icon #user-icon {
+    margin-top: 10px;
+    width: 30px;
+    height: 29px;
+}
+
+.form-register .name #name-input {
+    height: 50px;
+    width: 300px;
+    border-radius: 0px 0px 0px 0px;
+    outline: 0;
+    border: none;
+    border-bottom: solid 1px;
+    border-color: rgb(194, 194, 194);
+    -webkit-box-shadow: none !important;
+}
+
+
+
+/*EMAIL INPUT*/
+.form-register .email {
+    border-radius: 5px;
+    display: flex;
+    margin-top: 1px;
+    margin-left: 55px;
+    margin-top: -5px
+}
+
+.form-register .label-email-input {
+    margin-right: 206px;
+    color: black;
+    margin-top: 10px;
+}
+
+.form-register .email .div-user-icon {
+    width: 45px;
+    border-bottom: solid 1px;
+    border-color: rgb(194, 194, 194);
+    border-radius: 0px 0px 0px 0px;
+}
+    
+.form-register .email .div-user-icon #user-icon {
+    margin-top: 10px;
+    width: 30px;
+    height: 29px;
+}
+
+.form-register .email #email-input {
+    height: 50px;
+    width: 300px;
+    outline: 0;
+    border: none;
+    border-bottom: solid 1px;
+    border-radius: 0px 0px 0px 0px;
+    border-color: rgb(194, 194, 194);
+    -webkit-box-shadow: none !important;
+}
+
+
+/*PASSWORD INPUT*/
+.form-register .password {
+    border: 1px;
+    border-color: black;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 55px;
+    margin-top: -5px;
+}
+
+.form-register .label-password-input {
+    margin-right: 206px;
+    color: black;
+    margin-top: 10px;
+}
+
+.form-register .password .div-padlock-icon {
+    width: 45px;
+    border-bottom: solid 1px;
+    border-color: rgb(194, 194, 194);
+    border-radius: 0px 0px 0px 0px;
+}
+
+.form-register .password .div-padlock-icon #padlock-icon {
+    margin-top: 10px;
+    width: 30px;
+    height: 29px;
+}
+
+.form-register .inputs .password #password-input {
+    height: 50px;
+    width: 300px;
+    border-radius: 0px 0px 0px 0px;
+    outline: 0;
+    border: none;
+    border-bottom: solid 1px;
+    border-color: rgb(194, 194, 194);
+    -webkit-box-shadow: none !important;
+
+}
+
+
+/*PASSWORD CONFIRMATION FORM*/
+.form-register .password-confirmation  {
+    border: 1px;
+    border-color: black;
+    border-radius: 5px;
+    display: flex;
+    margin-left: 55px;
+    margin-top: -5px;
+}
+
+.form-register .label-password-input-confirmation {
+    margin-right: 180px;
+    color: black;
+    margin-top: 10px;
+}
+
+.form-register .password-confirmation  .div-padlock-icon-confirmation  {
+    width: 45px;
+    border-bottom: solid 1px;
+    border-color: rgb(194, 194, 194);
+    border-radius: 0px 0px 0px 0px;
+}
+
+.form-register .password-confirmation  .div-padlock-icon-confirmation  #padlock-icon-confirmation  {
+    margin-top: 10px;
+    width: 30px;
+    height: 29px;
+}
+
+.form-register .password-confirmation  #password-input-confirmation  {
+    height: 50px;
+    width: 300px;
+    border-radius: 0px 0px 0px 0px;
+    outline: 0;
+    border: none;
+    border-bottom: solid 1px;
+    border-color: rgb(194, 194, 194);
+    -webkit-box-shadow: none !important;
+}
+
+
+/*CHECKBOX INPUT*/
+.form-register .div-accept-terms {
+    margin-top: 20px;
+    margin-right: 86px;
+}
+
+.form-register .div-accept-terms .terms-use {
+    margin-right: 115px;
+    background: white;
+    color: rgba(0,212,255,1);
+    border: solid 1px rgba(0,212,255,1);
+    -webkit-box-shadow: none !important;
+}
+
+.form-register .div-accept-terms .terms-use:hover {
+    color: white;
+    background: rgba(0,212,255,1);
+}
+
+
+/*BUTTON*/
+.form-register .enter-button {
+    height: 50px;
+    width: 345px;
+    margin-top: 20px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 5px;
+    color: white;
+    border: 0 none;
+    font-size: 15px;
+}
+
+
+/*LINK*/
+.form-register .link {
+    margin-top: 20px;
+}
+
+.form-register .link #link-login {
+    margin-left: 210px;
+    font-size: 15px;
+    text-decoration:none;
+    color: black;
+}
+
+.form-register .link #link-login:before {
+    content: "";
+    margin-top: 25px;
+    position: absolute;
+    width: 29.5%;
+    height: 3px;
+    background: linear-gradient(
+        90deg, rgba(2,0,36,1) 0%,
+        rgba(9,9,121,1) 35%,
+        rgba(0,212,255,1) 100%
+    );
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+}
+
+.form-register .link #link-login:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+}
+
+.form-register #hr-bottom {
+    background-color: white;
+    height: .7px;
+    margin-top: 20px;
+    
+}
+
+.term {
+    text-align: justify;
+}
+

@@ -1,0 +1,278 @@
+* {
+    font-family: open sans;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 0px;
+}
+
+.students {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    background: white;
+}
+
+
+/*NAVBAR*/
+.students .screen-data {
+    width: 100%;
+    height: 100px;
+    padding: 9px 0 0 240px;
+    display: flex;
+    position: absolute;
+    white-space: nowrap;
+    border-bottom: solid 1px rgb(212, 212, 212);
+}
+
+.students .screen-data .str-dashboard {
+    margin-top: 15px;
+    color: black;
+    font-size: 23pt;
+}
+
+.students .div-img-user {
+    float: right;
+    margin-right: 30px;
+}
+
+.students .div-img-user .img-user {
+    width: 98px;
+}
+
+
+/*MENU*/
+.students .menu {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    background:rgba(9,9,121,1);
+    z-index: 1;
+    margin-top: -95px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.students .menu a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid;
+    border-color: white;
+    cursor: pointer;
+}
+
+.students .menu a:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.students .menu .sitename {
+    padding: 30px 16px;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 20pt;
+}
+
+.students .menu .sitename:hover {
+    background: rgba(9,9,121,1);
+    color: white;
+}
+
+.students .menu .menu-bottom {
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+/*RANKINGS*/
+.students .ranking {
+    width: 270px;
+    height: 390px;
+    background: white;
+    border-radius: 9px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.07);
+    float: right;
+    transform: translate(90px, 130px);
+}
+
+.students .ranking .str-ranking {
+    margin: 10px 15px 0 15px;
+    text-align: center;
+}
+
+.students .ranking ul {
+    margin: 10px 15px 0 15px;
+}
+
+.students .ranking ul li {
+    height: 50px;
+    margin-bottom: 20px; 
+    display: inline-block;
+    border-bottom: solid 1px rgb(190, 190, 190);
+}
+
+.students .ranking ul li .team-ranking {
+    width: 235px;
+    display: flex;
+}
+
+.students .ranking ul li .team-ranking .team-profile img {
+    height: 40px;
+}
+
+.students .ranking ul li .team-ranking .team-name {
+    width: 163px;
+    height: 30px;
+    text-align: left;
+    transform: translate(8px, 8px);
+
+    white-space: nowrap;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+.students .ranking ul li .team-ranking .team-points {
+    width: 30px; 
+    position: absolute;
+    transform: translate(205px, 8px);
+}
+
+
+/*PROFILES CARDS*/
+.students .content {
+    width: auto;
+    min-width: 380px;
+    max-width: 66%;
+    margin: 130px 380px 0 240px;
+}
+.students .content .cards-students {
+    
+}
+/*
+.students .content .cards-students ul {
+    list-style: none;
+    /*border: solid 1px;*/
+/*}*/
+/*
+.students .content .cards-students .line-title {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.students .content .cards-students .student-data {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    border: solid 1px red;
+}
+
+.students .content .cards-students .student-data .team-name {
+    margin-left: 355px;
+    white-space: nowrap;
+    border: solid 1px;
+}
+
+.students .content .cards-students .student-data .team-points {
+    width: 30px;
+    margin-left: 535px;
+    border: solid 1px;
+}
+*/
+
+
+.students .content .cards-students .student-data {
+    /*margin-top: 15px;*/
+    /*border: solid 1px red;*/
+}
+
+.students .content .cards-students .student-data ul {
+    list-style: none;
+}
+
+.students .content .cards-students .student-data .li {
+    display: flex;
+    width: auto;
+    max-width: 400px;
+    margin-bottom: 10px;
+    /*border: solid 1px;*/
+}
+
+.students .content .cards-students .student-data .li .line-title {
+    display: flex;
+    width: auto;
+    min-width: 15%;
+    max-width: 80%;
+}
+
+.students .content .cards-students .student-data .li .line-title .str-student-name {
+    min-width: 340px;
+    white-space: nowrap;
+    /*border: solid 1px;*/
+}
+
+.students .content .cards-students .student-data .li .line-title .str-student-points {
+    width: 50px;
+    margin-left: 10px;
+    /*border: solid 1px;*/
+}
+
+.students .content .cards-students .student-data .li2 {
+    display: flex;
+    width: auto;
+    max-width: 400px;
+    /*border: solid 1px;*/
+}
+
+.students .content .cards-students .student-data .li2 .div-student-name {
+    width: 400px;
+    border-bottom: solid 1px;
+}
+
+.students .content .cards-students .student-data .li2 .student-name {
+    float: left;
+    margin-top: 10px;
+    white-space: nowrap;
+    /*border: solid 1px;*/
+}
+
+.students .content .cards-students .student-data .li2 .student-points {
+    width: 40px;
+    margin-top: 10px;
+    border-bottom: solid 1px;
+}
+
+.students .content .cards-students .student-data .team-name {
+    /*margin-top: 10px;
+    float: left;
+    white-space: nowrap;
+    border: solid 1px;*/
+}
+
+.students .content .cards-students .student-data .team-points {
+    /*width: 30px;
+    margin-top: 10px;
+    margin-left: 40px;
+    border: solid 1px;*/
+}
+
+.students .menu .disabled {
+    color: gray; 
+}
+
+.students .menu .disabled:hover {
+    color: gray; 
+    background: rgba(9,9,121,1);
+    cursor: default;
+}

@@ -1,0 +1,205 @@
+* {
+    font-family: open sans;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 0px;
+}
+
+.select-enemy {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    background: white;
+}
+
+
+/*NAVBAR*/
+.select-enemy nav .navbar {
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(221deg, rgba(253,40,29,1) 0%, rgba(206,51,126,1) 50%, rgba(156,63,232,1) 100%);
+    position: fixed;
+    box-shadow: 2px 5px 5px 2px rgba(0,0,0,0.13);
+}
+
+.select-enemy nav .navbar .sitename a {
+    color: white;
+    text-decoration: none;
+    margin-left: 60px;
+}
+
+.select-enemy nav .navbar .student-data {
+    display: flex;
+    position: absolute;
+    margin-left: 254px;
+}
+
+.select-enemy nav .navbar .student-data .team-name-principal {
+    color: white;
+    font-size: 30px;
+}
+
+.select-enemy nav .navbar .student-data .trace {
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.select-enemy nav .navbar .student-data .team-points-principal{
+    color: white;
+    font-size: 25px;
+    margin-top: 3px;
+    margin-left: 20px;
+}
+
+.select-enemy nav #hr {
+    max-width: 100%;
+    margin-top: -1px;
+    margin-left: 270px;
+    background: black;
+    position: relative;
+}
+
+
+/*MENU*/
+/*.select-enemy .menu {
+    position: fixed; 
+    background:rgba(9,9,121,1);
+    width: 250px;
+    height: 90%;
+    z-index: 1;
+    margin-top: 83px;
+    margin-left: 0px;
+}
+
+.select-enemy .menu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid;
+    border-color: white;
+}
+
+.select-enemy .menu a:hover {
+    background-color: white;
+    
+}
+
+.select-enemy .menu .menu-bottom {
+    margin-top: 535px;
+
+}
+*/
+
+/*RANKINGS*/
+.select-enemy  .ranking {
+    width: 270px;
+    height: 390px;
+    background: white;
+    border-radius: 9px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.07);
+    float: right;
+    transform: translate(90px, 130px);
+}
+
+.select-enemy  .ranking .str-ranking {
+    margin: 10px 15px 0 15px;
+    text-align: center;
+}
+
+.select-enemy  .ranking ul {
+    margin: 10px 15px 0 15px;
+}
+
+.select-enemy  .ranking ul li {
+    height: 50px;
+    margin-bottom: 20px; 
+    display: inline-block;
+    border-bottom: solid 1px rgb(190, 190, 190);
+}
+
+.select-enemy  .ranking ul li .team-ranking {
+    width: 235px;
+    display: flex;
+}
+
+.select-enemy  .ranking ul li .team-ranking .team-profile img {
+    height: 40px;
+}
+
+.select-enemy  .ranking ul li .team-ranking .team-name {
+    width: 163px;
+    height: 30px;
+    text-align: left;
+    transform: translate(8px, 8px);
+
+    white-space: nowrap;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+.select-enemy  .ranking ul li .team-ranking .team-points {
+    width: 30px; 
+    position: absolute;
+    transform: translate(205px, 8px);
+}
+
+
+/*PROFILES CARDS*/
+.select-enemy .cards-students {
+    width: 55%;
+    /*border: solid 1px red;*/
+    margin-top: 125px;
+    margin-left: 22%;
+}
+
+.select-enemy .cards-students ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    /*border: solid 1px;*/
+}
+
+.select-enemy .cards-students .card-individual {
+    min-width: 100px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /*border: solid 1px blue;*/
+}
+
+.select-enemy .cards-students .card-individual .profile-data {
+    margin-top: 0px;
+    display: flex;
+}
+
+.select-enemy .cards-students .card-individual .profile-data .img-individual {
+    height: 8%;
+    margin-left: 20px;
+    margin-top: 15px;
+    position: absolute;
+    /*border: solid 1px*/
+}
+
+.select-enemy .cards-students .card-individual .profile-data .username-profile {
+    margin-top: 25px;
+    margin-left: 100px;
+    /*border: solid 1px;*/
+    position: absolute;
+    
+}
+
+.select-enemy .cards-students .card-individual .points {
+    transform: translate(0px, 45px);
+    /*border: solid 1px green;*/
+    font-size: 50px;
+}
+
+
